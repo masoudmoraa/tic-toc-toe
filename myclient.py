@@ -445,8 +445,8 @@ class GUI :
         color_inactive = pg.Color('lightskyblue3')
         color_active = pg.Color('dodgerblue2')
 
-        image_x = pg.image.load('x.png')
-        image_o = pg.image.load('o.png')
+        image_x = pg.image.load('./images/x.png')
+        image_o = pg.image.load('./images/o.png')
         
         # 0 : opponent name    1 : sign     2 : turn
         info = (self.server.recv_message()).split(",")
